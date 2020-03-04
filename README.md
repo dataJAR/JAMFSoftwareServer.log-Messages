@@ -44,6 +44,7 @@ The messages have an assigned status, as per:
 |`[lientCommunicationServlet] - Comm Device null.`|:warning:||A device which is no longer managed via the JPS is contacting the JPS. The message body cointains MAC & remote IP details so might be traceable if a concern, but can also be ignored.|
 |`[JAMFPushProxyConnection ] - Jamf Push Proxy returned status of: 400`|:warning:||Informational message, can be ignored as long as Push Proxy is correctly renewing.|
 |`[WARN ] [neralPool-0] [PushQueueManager ] - Unable to flush connection com.jamfsoftware.jss.pushnotification.connections.JAMFPushProxyConnection`|:warning:||Informational message, can be ignored as long as Push Proxy is correctly renewing.|
+| `CSRF risk found. Denying request.` |:warning:|PI-007743|“Jamf Pro CloudDataSupplier configuration points to a URL that is no longer in service”  |
 |`[VppEmailMonitor ] - Running email monitor`|:ok:||Informational message, not actionable.|
 |`[VppEmailMonitor          ] - Email monitor completed after x.xx seconds`|:ok:||Informational message, the seconds taken can be of use when troubleshooting.|
 |`[PushNotificationUtility  ] - x invalid tokens were submitted to be pushed.`|:ok:||Informational message, not actionable.|
@@ -51,4 +52,5 @@ The messages have an assigned status, as per:
 |`[EduMonitor1] [ucationProfileFactoryImpl] - Computer is not the correct macOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
 |`[EduMonitor1] [ucationProfileFactoryImpl] - Device is not the correct iOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
 |`[rentProfileCleanupMonitor] - Running parent profile cleanup`|:ok:||Informational message, not actionable.|
+
 
