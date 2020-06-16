@@ -20,6 +20,7 @@ The messages have an assigned status, as per:
 |`Fatal error logged during server initialization`|:boom:||JPS failed to startup, further investigation needed as to why.|
 |`APNs Certificate is expired.`|:boom:||Renew the APNS certificate.|
 |`[llmentProgramDeviceHelper] - 403 The organization has not accepted latest Terms and Conditions of the program`|:bomb:||Login to ABM/ASM to accept the new terms & conditions.|
+|`[ntInstanceSyncCommService] - DeviceEnrollmentProgramException[responseCode=403, responseBody='T_C_NOT_SIGNED', message='An error occurred during oauth token refresh']`|:bomb:||Login to ABM/ASM to accept the new terms & conditions.|
 |`[ERROR] [duledPool-8] [ntInstanceSyncCommService] - com.jamfsoftware.jss.objects.streamlinedenrollment.service.DeviceEnrollmentProgramException: The DEP service reported an error.`|:bomb:||Download a new token from ABM/ASM & upload into the JPS.|
 |`[ntInstanceSyncCommService] - com.jamfsoftware.jss.objects.streamlinedenrollment.service.DeviceEnrollmentProgramException: An error occurred during oauth token refresh`|:bomb:||Either renew DEP token or login to ABM/ASM to accept the new terms & conditions.|
 |`DeviceEnrollmentProgramException[responseCode=403, responseBody='FORBIDDEN', message='An error occurred during oauth token refresh']`|:bomb:||Either renew DEP token or login to ABM/ASM to accept the new terms & conditions.|
