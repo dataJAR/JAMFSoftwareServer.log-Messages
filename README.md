@@ -31,6 +31,7 @@ The messages have an assigned status, as per:
 |`[VppCommService] Client context for admin account doesn't match`|:bomb:||The VPP token may be in use by another server. The VPP token can be reclaimed.|
 |`[llmentProgramDeviceHelper] - 403: token_expiredForbidden`|:warning:||Remove or renew the offending token.|
 |`[llmentProgramDeviceHelper] - 403: token_rejectedForbidden`|:warning:||Remove or renew the offending token.|
+|`[ntInstanceSyncCommService] - DeviceEnrollmentProgramException[responseCode=403, responseBody='token_rejectedForbidden', message='An error occurred during oauth token refresh']`|:warning:||Remove or renew the offending token.|
 |`[ntInstanceSyncCommService] - com.jamfsoftware.jss.objects.streamlinedenrollment.service.DeviceEnrollmentProgramException: Cannot create a connection for an expired token`|:warning:||Remove or renew the offending token.|
 |`[ntInstanceSyncCommService] - DeviceEnrollmentProgramException[message='Cannot create a connection for an expired token']`|:warning:||Remove or renew the offending token.|
 |`[llmentProgramDeviceHelper] - 400 response from Device Enrollment Program indicating one of the following:`|:warning:||DEP token has been downloaded from ABM/ASM but not uploaded to JPS. Remove or renew the offending token.|
