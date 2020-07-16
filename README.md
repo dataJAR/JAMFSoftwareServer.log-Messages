@@ -29,6 +29,7 @@ The messages have an assigned status, as per:
 |`[eEnrollmentProgramRequest] - javax.net.ssl.SSLHandshakeException: Received fatal alert: decode_error`|:bomb:|PI-007508|TLS 1.3 needs to be disabled in JAVA_OPTS or CATALINA_OPTS, fixed with OpenJDK 11.0.5|
 |`[licationListUpdateService] - Unable to compare the catalog version '1.5.1' with the ApplicationVersion '' or ApplicationShortVersion '' for the app 'com.adobe.rush', so not updating`|:bomb:|PI-007928|Catalog version and app name can vary. VPP Apps are unable to be updated on devices due to unknown version comparision issue. Contact Jamf Support|
 |`[VppCommService] Client context for admin account doesn't match`|:bomb:||The VPP token may be in use by another server. The VPP token can be reclaimed.|
+|`javax.naming.AuthenticationException: [LDAP: error code 49 - 80090308: LdapErr: DSID-0C09041C, comment: AcceptSecurityContext error, data 52e, v4563�]`|:bomb:||LDAP password incorrect.|
 |`[llmentProgramDeviceHelper] - 403: token_expiredForbidden`|:warning:||Remove or renew the offending token.|
 |`[llmentProgramDeviceHelper] - 403: token_rejectedForbidden`|:warning:||Remove or renew the offending token.|
 |`[ntInstanceSyncCommService] - DeviceEnrollmentProgramException[responseCode=403, responseBody='token_rejectedForbidden', message='An error occurred during oauth token refresh']`|:warning:||Remove or renew the offending token.|
