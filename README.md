@@ -45,6 +45,7 @@ The messages have an assigned status, as per:
 |`[Root exception is javax.net.ssl.SSLHandshakeException: NotAfter:`|:warning:||LDAPS certificate has expired.|
 |`javax.naming.AuthenticationNotSupportedException: [LDAP: error code 8 - 00002028: LdapErr: DSID-0C09023C, comment: The server requires binds to turn on integrity`|:warning:||LDAP connection requires SSL/TLS|
 |`javax.naming.CommunicationException: <ldap.server:port> [Root exception is java.net.SocketTimeoutException: connect timed out]`|:warning:||Connection to LDAP <ldap.server:port> timed out. Up LDAP time out time & investigate if persists.|
+|`[Root exception is java.net.ConnectException: Connection timed out (Connection timed out)]`|:warning:||Connection to LDAP <ldap.server:port> timed out. Up LDAP time out time & investigate if persists.|
 |`javax.naming.CommunicationException: <ldap.server:port> [Root exception is java.net.SocketTimeoutException: Read timed out]`|:warning:||Connection to LDAP <ldap.server:port> timed out. Up LDAP time out time & investigate if persists.|
 |`[ComputerHelper ] java.lang.IllegalArgumentException: Invalid UUID string:`|:warning:|| A macOS device has an invalid record in Jamf Pro.  If no smart groups calculate correctly, then this would be an issue with a managed device. If smart groups are fine, but searches fail then look for any unmanaged devices. Delete the offending device once found.|
 |`[Root exception is java.net.SocketException: Connection reset]`|:warning:||Connectivity issue with to LDAP(s), investigation needed.|
