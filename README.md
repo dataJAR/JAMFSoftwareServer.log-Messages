@@ -66,5 +66,5 @@ The messages have an assigned status, as per:
 |`[EduMonitor1] [ucationProfileFactoryImpl] - Computer is not the correct macOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
 |`[EduMonitor1] [ucationProfileFactoryImpl] - Device is not the correct iOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
 |`[rentProfileCleanupMonitor] - Running parent profile cleanup`|:ok:||Informational message, not actionable.|
-
+|`[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1139; cvc-complex-type.2.4.a: Invalid content was found starting with element`|:ok:|| A device is checking into Jamf Pro which is not enrolled. See this FR too: https://www.jamf.com/jamf-nation/feature-requests/9799/change-logging-message-when-a-device-checks-in-which-is-not-enrolled
 
