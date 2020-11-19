@@ -68,4 +68,5 @@ The messages have an assigned status, as per:
 |`[rentProfileCleanupMonitor] - Running parent profile cleanup`|:ok:||Informational message, not actionable.|
 |`[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1139; cvc-complex-type.2.4.a: Invalid content was found starting with element`|:ok:|| A device is checking into Jamf Pro which is not enrolled. See this FR to change logging behaviour: https://www.jamf.com/jamf-nation/feature-requests/9799/change-logging-message-when-a-device-checks-in-which-is-not-enrolled
 |`Found path to duplicate InstalledCertificates. Unique certs:`|:ok:|| Jamf Pro has de-duped certificates in a device record. See this FR to change logging behaviour: https://www.jamf.com/jamf-nation/feature-requests/9809/change-log-message-when-certificates-are-de-duped-for-a-record
+|`[WARN ] [erverThread] [AdvancedSearchHelper     ] - Unable to match recon field Enrolled via DEP`|:ok:|| macOS devices older than 10.13.2 within Jamf Pro, delete or update the macOS devices to make this message go away
 
