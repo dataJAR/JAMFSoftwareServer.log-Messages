@@ -59,16 +59,17 @@ The messages have an assigned status, as per:
 | `java.lang.RuntimeException: The Signature object is in an invalid state` |:warning:|PI-005954 PI-006889|Self Service for macOS does not renew expired session with JPS. Usually caused by users leaving Self Service open for long periods of time whilst the Mac enters sleep. Also, “MacOS Self Service requesting device info from Jamf Pro every 2 seconds if left open and device sleeps past UAPI token renewal and can cause large selfservice_debug.log files”. |
 |`"[ERROR]" "There was a problem determining membership of device" "in Computer group" "Comparing the value on the device was problematic when compared to the" "This device will not be included in this group because of this criteria error."`|:warning:||Issue with Smart Computer Group criteria, check the log for mre details & correct.|
 |`Outer initWithXML error: java.lang.NullPointerException`|:warning:||One or more profiles has an issue with it's XML. Replace the offending profile.|
-|`[AbstractMetadataProvider ] - Metadata provider failed to properly initialize, fail-fast=true, halting`|:warning:|| SSO is enabled for Self Service login, but a Signing Cetificate is not in place. Login to Jamf Pro, navigate to System Settings > Single Sign On. Under "Security" change "No Certificate" to "Generate Certificate". No need to make changes to the idp etc for this once done.
+|`[AbstractMetadataProvider ] - Metadata provider failed to properly initialize, fail-fast=true, halting`|:warning:|| SSO is enabled for Self Service login, but a Signing Cetificate is not in place. Login to Jamf Pro, navigate to System Settings > Single Sign On. Under "Security" change "No Certificate" to "Generate Certificate". No need to make changes to the idp etc for this once done. |
 |`[VppEmailMonitor ] - Running email monitor`|:ok:||Informational message, not actionable.|
 |`[VppEmailMonitor          ] - Email monitor completed after x.xx seconds`|:ok:||Informational message, the seconds taken can be of use when troubleshooting.|
 |`[PushNotificationUtility  ] - x invalid tokens were submitted to be pushed.`|:ok:||Informational message, not actionable.|
 |`[FeedbackTokenFactory     ] - 1 feedback tokens were found:`|:ok:||Informational message, not actionable.|
-|`[EduMonitor1] [ucationProfileFactoryImpl] - Computer is not the correct macOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
-|`[EduMonitor1] [ucationProfileFactoryImpl] - Device is not the correct iOS Version to have Edu Profile:`|:ok:||Informational message, not actionable.|
-|`[rentProfileCleanupMonitor] - Running parent profile cleanup`|:ok:||Informational message, not actionable.|
+|`[EduMonitor1] [ucationProfileFactoryImpl] - Computer is not the correct macOS Version to have Edu Profile:`|:ok:|| Informational message, not actionable.|
+|`[EduMonitor1] [ucationProfileFactoryImpl] - Device is not the correct iOS Version to have Edu Profile:`|:ok:|| Informational message, not actionable.|
+|`[rentProfileCleanupMonitor] - Running parent profile cleanup`|:ok:|| Informational message, not actionable.|
 |`[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1139; cvc-complex-type.2.4.a: Invalid content was found starting with element`|:ok:|| A device is checking into Jamf Pro which is not enrolled. See this FR to change logging behaviour: https://www.jamf.com/jamf-nation/feature-requests/9799/change-logging-message-when-a-device-checks-in-which-is-not-enrolled
 |`Found path to duplicate InstalledCertificates. Unique certs:`|:ok:|| Jamf Pro has de-duped certificates in a device record. See this FR to change logging behaviour: https://www.jamf.com/jamf-nation/feature-requests/9809/change-log-message-when-certificates-are-de-duped-for-a-record
 |`[WARN ] [erverThread] [AdvancedSearchHelper     ] - Unable to match recon field Enrolled via DEP`|:ok:|| macOS devices older than 10.13.2 within Jamf Pro, delete or update the macOS devices to make this message go away
 |`[ERROR] [lina-exec-5] [AppleMDMCapableService   ] - Incorrect result size: expected 1, actual 0`|:ok:|| No issue, except for the log spam. Resolved in Jamf Pro 10.23+
+|`"Self Service created com.jamfsoftware.jss.dal.entity.SelfServiceEntity"`| :ok:|| Informational message, not actionable.|
 
