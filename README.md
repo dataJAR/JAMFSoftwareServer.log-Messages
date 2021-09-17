@@ -31,6 +31,7 @@ The messages have an assigned status, as per:
 |`[ERROR] [eralPool-82] [rtificateRequestProcessor] - Certificate request ID xxx has failed. (Unable to build an ADCS Connector client.)`|:bomb:||Jamf Pro cannpt contact ADCS or the CA it's acting as a SCEP proxy for and as such certificate requets asre failing. Re-establish contact to resolve.|
 |`[VppCommService] Client context for admin account doesn't match`|:bomb:||The VPP token may be in use by another server. The VPP token can be reclaimed.|
 |`[LDAP: error code 49 - Invalid Credentials]`|:bomb:||LDAP password incorrect.|
+|`Error during download of remote software title summaries`|:bomb:||The issue is related to connectivity to a Patch definitions source. Proceeding the above log text, there will be the name of the patch definition source as it appears within Jamf Pro. Login to Jamf Pro to get the needed details and investigate.|
 |`[llmentProgramDeviceHelper] - 403: token_expiredForbidden`|:warning:||Remove or renew the offending token.|
 |`[llmentProgramDeviceHelper] - 403: token_rejectedForbidden`|:warning:||Remove or renew the offending token.|
 |`[ntInstanceSyncCommService] - DeviceEnrollmentProgramException[responseCode=403, responseBody='token_rejectedForbidden', message='An error occurred during oauth token refresh']`|:warning:||Remove or renew the offending token.|
