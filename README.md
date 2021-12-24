@@ -76,5 +76,8 @@ The messages have an assigned status, as per:
 |`Found path to duplicate InstalledCertificates. Unique certs:`|:ok:|| Jamf Pro has de-duped certificates in a device record. See this FR to change logging behaviour: https://www.jamf.com/jamf-nation/feature-requests/9809/change-log-message-when-certificates-are-de-duped-for-a-record
 |`[WARN ] [erverThread] [AdvancedSearchHelper     ] - Unable to match recon field Enrolled via DEP`|:ok:|| macOS devices older than 10.13.2 within Jamf Pro, delete or update the macOS devices to make this message go away
 |`[ERROR] [lina-exec-5] [AppleMDMCapableService   ] - Incorrect result size: expected 1, actual 0`|:ok:|| No issue, except for the log spam. Resolved in Jamf Pro 10.23+
-|`"Self Service created com.jamfsoftware.jss.dal.entity.SelfServiceEntity"`| :ok:|| Informational message, not actionable.|
-
+|`"Self Service created com.jamfsoftware.jss.dal.entity.SelfServiceEntity"`|:ok:|| Informational message, not actionable.|
+|`[AzureGroupServiceImpl    ] - No Azure AD configuration found under id:`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP|
+|`[AzureMembershipService   ] - No Azure AD configuration found under id:`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP|
+|`[AzureGroupIdService ] - Group id has incorrect format`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP|
+|`[AzureGroupIdService      ] - Group id is null or empty`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP|
