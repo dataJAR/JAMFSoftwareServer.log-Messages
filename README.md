@@ -82,3 +82,5 @@ The messages have an assigned status, as per:
 |`[AzureGroupIdService ] - Group id has incorrect format`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP.|
 |`[AzureGroupIdService      ] - Group id is null or empty`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP.|
 |`[CloudIdPMembershipProxy  ] - Membership could not be calculated, because at least one argument was empty`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP.|
+|`[UniqueIDSSMCache         ] -  An error has occurred for cache JSSCache and key redacted::SelfServiceBookmarks-findAll: Non-serializable object`|:ok:|| PI-104623 -  Self Service Bookmarks fails and causes the lookup to happen at every call instead of caching the results.|
+
