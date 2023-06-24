@@ -84,4 +84,4 @@ The messages have an assigned status, as per:
 |`[AzureGroupIdService      ] - Group id is null or empty`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP.|
 |`[CloudIdPMembershipProxy  ] - Membership could not be calculated, because at least one argument was empty`|:ok:|| PI-010412 - misleading error logging from Cloud Identity Provider for customers who have configured and use only LDAP.|
 |`[UniqueIDSSMCache         ] -  An error has occurred for cache JSSCache and key redacted::SelfServiceBookmarks-findAll: Non-serializable object`|:ok:|| PI-104623 -  Self Service Bookmarks fails and causes the lookup to happen at every call instead of caching the results.|
-
+|`com.jamfsoftware.jss.exceptions.mdm.ConfigurationProfileException: No App Store Restriction Profile`|:ok:|| PI-111968. Temp resolution is to run the following to clear the alerts: `UPDATE mobile_device_management_commands SET apns_result_status = 'Acknowledged' WHERE command = 'InstallProfile' AND profile_id = -7 AND apns_result_status = '';`|
